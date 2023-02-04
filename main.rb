@@ -7,8 +7,8 @@ p2 = Player.new("P2", 3)
 mathGame = Gameloop.new()
 
 
-mathGame.start_game
 mathGame.show_lives_balance(p1, p2)
-
-question = RandomSumQuestion.new(0, [], 0)
-question.question_generator(p1)
+mathGame.start_game
+question1 = RandomSumQuestion.new(0, [], 0)
+question1.question_generator(p1)
+question1.playerAns = gets.chomp
