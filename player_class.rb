@@ -1,9 +1,9 @@
 class Player
   attr_accessor :name, :player_lives
   
-  def initialize(name, lives)
+  def initialize(name)
     @name = name
-    @player_lives = lives
+    @numLives = 3
   end
 
   def wrong_answer_statement
