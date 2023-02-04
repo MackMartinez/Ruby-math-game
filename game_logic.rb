@@ -1,4 +1,4 @@
-class Gameloop
+class GameLogic
 
   def initialize(playersTurn)
     @playersTurn = playersTurn
@@ -24,8 +24,5 @@ class Gameloop
       puts "----- GAME OVER -----"
     end
   end
-
-
-
 end
 
