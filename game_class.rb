@@ -8,7 +8,7 @@ class Gameloop
   end
 
   def show_lives_balance(player1, player2)
-    puts "#{player1}: #{player1.lives}/3 vs #{player2}: #{player2.lives}/3"
+    puts "#{player1.name}: #{player1.lives}/3 lives vs #{player2.name}: #{player2.lives}/3 lives"
   end
 end
 
