@@ -1,4 +1,5 @@
 class GameLogic
+  attr_accessor :playersTurn
 
   def initialize(playersTurn)
     @playersTurn = playersTurn
@@ -10,18 +11,19 @@ class GameLogic
 
   def show_lives_balance(player1, player2)
     puts "#{player1.name}: #{player1.lives}/3 lives vs #{player2.name}: #{player2.lives}/3 lives"
-    puts "----- NEW TURN -----"
   end
 
   def check_lives_balance (player1, player2)
-    if player1.lives = 0
+    if player1.lives == 0
       puts "Player 2 wins with a score of #{player2.lives}/3"
       puts "----- GAME OVER -----"
+      puts "Good bye!"
     end
 
-    if player2.lives = 0
+    if player2.lives == 0
       puts "Player 1 wins with a score of #{player1.lives}/3"
       puts "----- GAME OVER -----"
+      puts "Good bye!"
     end
   end
 end
