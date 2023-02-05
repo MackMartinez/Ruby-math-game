@@ -14,12 +14,16 @@ class RandomSumQuestion
   def question_generator(player)
     @ansArr.push(self.random_Num, self.random_Num)
     @correctAns = @ansArr[0] + @ansArr[1]
-    puts "#{player.name}: What does #{@ansArr[0]} plus #{@ansArr[1]} equal?"
+    puts "----- NEW TURN -----"
+    puts "#{player}: What does #{@ansArr[0]} plus #{@ansArr[1]} equal?"
   end
 
   def check_answer(userInput, correctAns, player)
     if playerAns.to_i != correctAns.to_i
       player.lives -= 1
+      puts "#{player.name}: Seriously? No!"
+    else
+    puts "#{player.name}: YES! You are correct."
     end
   end
 
